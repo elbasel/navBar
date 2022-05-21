@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@900&display=swap');
+
+/* ========== START Dark Mode Colors ========== */
+:root {
+    --primary-color: #181a1b;
+    --secondary-color: #2b2f31;
+    --blue: #004daa;
+    --text-color: #d8d4cf;
+    --caption-color: #e8e6e3;
+    --main-font: 'Montserrat', sans-serif;
+}
+
+/* ========== END Dark Mode Colors ========== */
+/* To use background images thourgh  url, use it in Javasciprt using 
+import asset statment and e.style.background = `${importedImage}` */
+
+html {
+    height: -webkit-fill-available;
+}
+
+body {
+    width: 100vw;
+    min-height: 100vh;
+    min-height: -webkit-fill-available;
+    background-color: var(--primary-color);
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    flex: 10;
+}
+
+.nav {
+    flex: 1;
+    display: flex;
+    border-radius: 24px;
+    max-height: 100px;
+    /* min-height: 90px; */
+    overflow: hidden;
+}
+
+.nav-item {
+    flex: 1;
+    background-color: var(--secondary-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+
+    position: relative;
+}
+
+.nav-item img {
+    width: 60px;
+    height: 48px;
+    padding: 12px 18px;
+    border-radius: 24px;
+}
+
+img.selected {
+    background-color: rgb(32, 32, 150);
+}
+
+.nav-item .animation {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    background-color: white;
+    /* z-index: ; */
+    border-radius: 50%;
+    bottom: 10px;
+    animation: ping 0.4s ease-in-out 1 none;
+
+    display: none;
+}
+
+.nav-item p {
+    font-size: 16px;
+    color: #666666;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
+        Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 700;
+}
+
+@keyframes ping {
+    0% {
+        transform: scale(0.2);
+        opacity: 0.8;
+    }
+    80% {
+        transform: scale(1.2);
+        opacity: 0;
+    }
+    100% {
+        transform: scale(2.2);
+        opacity: 0;
+    }
+}
