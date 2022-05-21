@@ -3,7 +3,7 @@
 # Simple navbar written in plain html, css and js
 
 install:
-npm install @elbasel619/navBar
+npm install @elbasel619/nav-bar
 
 usage:
 
