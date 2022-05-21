@@ -86,7 +86,7 @@ const navBar = (() => {
     return { getNavElement }
 })()
 
-Testing
+// Testing
 const bar = navBar.getNavElement([
     { icon0: galleryImg, text0: 'Photos' },
     { icon1: searchImg, text1: 'Search' },
