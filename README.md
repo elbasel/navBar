@@ -20,5 +20,4 @@ usage:
     document.body.appendChild(bar)
 
 
-```js
-
+```
