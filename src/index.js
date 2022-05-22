@@ -1,9 +1,9 @@
-import './css/reset.css'
+// import './css/reset.css'
 import './css/index.css'
-import galleryImg from './assets/gallery.png'
-import searchImg from './assets/search.png'
-import shareImg from './assets/share.png'
-import libraryImg from './assets/library.png'
+// import galleryImg from './assets/gallery.png'
+// import searchImg from './assets/search.png'
+// import shareImg from './assets/share.png'
+// import libraryImg from './assets/library.png'
 
 const navBar = (() => {
     const navImageElements = []
@@ -87,12 +87,12 @@ const navBar = (() => {
 })()
 
 // Testing
-const bar = navBar.getNavElement([
-    { icon0: galleryImg, text0: 'Photos' },
-    { icon1: searchImg, text1: 'Search' },
-    { icon2: shareImg, text2: 'Share' },
-    { icon3: libraryImg, text3: 'Library' },
-])
-document.body.appendChild(bar)
+// const bar = navBar.getNavElement([
+//     { icon0: galleryImg, text0: 'Photos' },
+//     { icon1: searchImg, text1: 'Search' },
+//     { icon2: shareImg, text2: 'Share' },
+//     { icon3: libraryImg, text3: 'Library' },
+// ])
+// document.body.appendChild(bar)
 
 export default navBar
